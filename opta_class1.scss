@@ -1,0 +1,447 @@
+// color
+$white: #ffffff;
+$white-gray: #e6e6e6;
+$brown: #404040;
+$yellow: #fcb827;
+$blue: #263380;
+$blue2: #073A69;
+$blue3: #174A87;
+$blue4: #263181;
+$blue5: #595F9B;
+$dark-blue: rgba(58,110,167,0.1);
+$gray: #8b8c90;
+$gray2: #5c5c5c;
+// size
+$s12: 12px;
+$s13: 13px;
+$s14: 14px;
+$s16: 16px;
+$s20: 20px;
+$s38: 38px;
+$s54: 54px;
+$s180: 180px;
+
+$fw400: 400;
+$fw700: 700;
+
+$ta-c: center;
+$ta-l: left;
+$ta-r: right;
+
+/*--------------*/
+
+// Opta widgets
+$h2-height: $s38;
+
+// Opta wrap
+$w-background: $white;
+$w-margin: 10px 0;
+
+$span-title-color: $blue2;
+$span-title-fs: $s20;
+$span-title-fw: $fw700;
+$span-title-t-align: $ta-c;
+
+// Commentary
+$commentary-btn-background: $blue3;
+$commentary-btn-fw: $fw700;
+$commentary-btn-color: $white;
+$commentary-btn-fs: $s14;
+$commentary-btn-width: $s180;
+
+// Lineups
+$lineups-name-background: $blue4;
+$lineups-name-t-align: $ta-c;
+
+$lineups-name-h3-color: $white;
+$lineups-name-h3-fw: $fw700;
+$lineups-name-h3-t-align: $ta-c;
+
+$lineups-name-span-fw: $fw700;
+$lineups-name-span-fs: $s16;
+
+$lineups-position-height: $s54;
+
+$lineups-position-h4-background: $gray;
+$lineups-position-h4-color: $white;
+$lineups-position-h4-fw: $fw400;
+
+$lineups-position-span-fs: $s16;
+
+// Player Comparison
+$pl-com-dropdown-label-height: $s38;
+$pl-com-dropdown-label-background: $blue4;
+$pl-com-dropdown-label-color: $white;
+
+$pl-com-dropdown-label-text-fs: $s16;
+$pl-com-dropdown-label-text-fw: $fw400;
+$pl-com-dropdown-label-text-height: $s38;
+
+$pl-com-dropdown-label-button-background: $blue4;
+$pl-com-dropdown-label-button-height: $s38;
+
+$pl-com-nav-a-fw: $fw400;
+$pl-com-nav-a-background: $dark-blue;
+
+$pl-com-nav-on-a-background: $yellow;
+$pl-com-nav-on-a-color: $white;
+$pl-com-nav-on-a-fw: $fw400;
+
+// Timeline
+$timeline-matchdata-dl-background: $blue5;
+$timeline-matchdata-dt-color: $white;
+$timeline-matchdata-dt-fs: $s14;
+$timeline-matchdata-dd-color: $yellow;
+$timeline-matchdata-dd-fs: $s12;
+$timeline-matchdata-dd-fw: $fw700;
+
+// Team Stats
+$team-st-teamsheet-button-background: $blue;
+$team-st-circle-home-background: $yellow;
+$team-st-circle-away-background: $blue;
+$team-st-subplayers-away-circle-background: $blue;
+$team-st-subplayers-circle-background: $yellow;
+
+// Match Stats
+$match-stats-tab-color: $brown;
+$match-stats-tab-fs: $s12;
+$match-stats-tab-background: $white-gray;
+
+$match-stats-tab-background-hover:$yellow;
+
+$match-stats-tab-on-color: $white;
+$match-stats-tab-on-fs: $s12;
+$match-stats-tab-on-background: $blue;
+
+$stats-bars-text: $blue;
+
+$bars-number-percent-fs: $s12;
+$bars-number-percent-color: $blue2;
+
+$bars-full-percent: $yellow;
+$bars-full-percent-away: $blue;
+
+// heatMap
+$heatmap-teamsheet-button-background: $blue;
+
+// actionArea
+
+// averagePosition
+$average-position-teamsheet-button-background: $blue;
+
+// attackingThirds
+
+// chalkboard
+$chalkboard-teamsheet-button-background: $blue;
+
+// goalReplay
+
+// passCombination
+$pass-comb-nav-on-a-fw: $fw700;
+$pass-comb-nav-on-a-color: $white;
+$pass-comb-nav-on-a-background: $blue;
+
+$pass-comb-nav-on-a-hover-background: $yellow;
+
+$pass-comb-dropdown-label-background: $white-gray;
+
+$pass-comb-dropdown-label-select-fs: $s13;
+
+$pass-comb-dropdown-label-button-background: $blue4;
+$pass-comb-dropdown-label-button-hover-background: $gray2;
+
+
+/*--------------*/
+
+
+.opta_class1 {
+    h2 {
+        height: $h2-height;
+        background: none;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+
+    .Opta {
+        // wrap header widget
+        .Opta_W {
+            background: $w-background;
+            margin: $w-margin;
+
+            // header widget
+            h2 span.Opta-Title {
+                color: $span-title-color;
+                font-size: $span-title-fs;
+                font-weight: $span-title-fw;
+                text-transform: uppercase;
+                text-align: $span-title-t-align;
+                padding: 0 10px;
+            }
+        }
+    }
+
+// Commentary Widget - btn full commentary
+    .btn_commentary {
+        background-color: $commentary-btn-background;
+        font-weight: $commentary-btn-fw;
+        color: $commentary-btn-color;
+        font-size: $commentary-btn-fs;
+        width: $commentary-btn-width;
+    }
+
+// Lineups
+    .lineups_wrap {
+        .Opta {
+            tr.Opta-Name {
+                th {
+                    background-color: $lineups-name-background!important;
+                    text-align: $lineups-name-t-align;
+
+                    h3 {
+                        color: $lineups-name-h3-color;
+                        font-weight: $lineups-name-h3-fw;
+                        text-align: $lineups-name-h3-t-align;
+
+                        span {
+                            font-weight: $lineups-name-span-fw;
+                            font-size: $lineups-name-span-fs;
+                        }
+                    }
+                }
+            }
+
+            tr.Opta-Position {
+                height: $lineups-position-height;
+
+                h4{
+                    background: $lineups-position-h4-background;
+                    color: $lineups-position-h4-color;
+                    font-weight: $lineups-position-h4-fw;
+
+                    span {
+                        font-size: $lineups-position-span-fs;
+                    }
+                }
+            }
+        }
+    }
+
+// Player Comparison
+    .player_comparison_wrap {
+        .Opta {
+            label.Opta-Dropdown-Label {
+                height: $pl-com-dropdown-label-height !important;
+                background-color: $pl-com-dropdown-label-background !important;
+                color: $pl-com-dropdown-label-color;
+            }
+
+            .Opta-Dropdown-Label-Text {
+                font-size: $pl-com-dropdown-label-text-fs;
+                font-weight: $pl-com-dropdown-label-text-fw;
+                height: $pl-com-dropdown-label-text-height !important;
+            }
+
+            div.Opta-Dropdown label.Opta-Dropdown-Label span.Opta-Dropdown-Label-Button {
+                background: $pl-com-dropdown-label-button-background;
+                height: $pl-com-dropdown-label-button-height;
+            }
+
+            .Opta-Nav a {
+                font-weight: $pl-com-nav-a-fw;
+                background-color: $pl-com-nav-a-background;
+            }
+
+            .Opta-Nav {
+                li.Opta-On a {
+                    background-color: $pl-com-nav-on-a-background;
+                    color: $pl-com-nav-on-a-color;
+                    font-weight: $pl-com-nav-on-a-fw;
+                }
+            }
+        }
+    }
+
+// Timeline
+    .timeline_wrap {
+        .Opta {
+            .Opta-Matchdata {
+                dl {
+                    background-color: $timeline-matchdata-dl-background;
+
+                    dt {
+                        color: $timeline-matchdata-dt-color;
+                        font-size: $timeline-matchdata-dt-fs;
+                    }
+
+                    dd {
+                        color: $timeline-matchdata-dd-color;
+                        font-size: $timeline-matchdata-dd-fs;
+                        font-weight: $timeline-matchdata-dd-fw;
+                    }
+                }
+            }
+        }
+    }
+
+// Team Stats
+    .team_stats_wrap {
+        .Opta {
+            .Opta-Teamsheet-Holder .Opta-Teamsheet-Button {
+                background-color: $team-st-teamsheet-button-background;
+            }
+
+            .Opta-FootballPitch .Opta-Node circle.Opta-Home {
+                fill: $team-st-circle-home-background;
+            }
+
+            .Opta-FootballPitch .Opta-Node circle.Opta-Away {
+                fill: $team-st-circle-away-background;
+            }
+
+            .Opta-FootballPitch-Subplayers {
+                .Opta-Sub.Opta-Away .Opta-Circle {
+                    background-color: $team-st-subplayers-away-circle-background;
+                }
+
+                .Opta-Sub .Opta-Circle {
+                    background-color: $team-st-subplayers-circle-background;
+                }
+            }
+        }
+    }
+
+// match stats
+    .match_stats_wrap {
+        .Opta {
+            .Opta-Nav {
+                li.Opta-On a {
+                    background-color: $match-stats-tab-on-background;
+                    font-size: $match-stats-tab-on-fs;
+                    font-weight: bold;
+                    color: $match-stats-tab-on-color;
+                }
+
+                li.Opta-On a:hover {
+                    background-color: $match-stats-tab-background-hover;
+                }
+
+                a {
+                    font-size: $match-stats-tab-fs;
+                    background-color: $match-stats-tab-background;
+                    color: $match-stats-tab-color;
+                    font-weight: bold;
+                }
+            }
+
+            .Opta-Stats-Bars {
+                th.Opta-Stats-Bars-Text {
+                    color: $stats-bars-text;
+                }
+
+                td.Opta-Outer {
+                    font-size: $bars-number-percent-fs;
+                    font-weight: bold;
+                    color: $bars-number-percent-color;
+                }
+
+                .Opta-Bars-Full {
+                    .Opta-Percent {
+                        background-color: $bars-full-percent;
+                    }
+
+                    .Opta-Percent.Opta-Away {
+                        background-color: $bars-full-percent-away;
+                    }
+                }
+            }
+        }
+    }
+
+// heatMap
+    .heat_map_wrap {
+        .Opta {
+            .Opta-Teamsheet-Holder.Opta-Away .Opta-Teamsheet-Button,
+            .Opta-Teamsheet-Holder .Opta-Teamsheet-Button,
+            .Opta-Nav li.Opta-On a,
+            .Opta-Stats-Bars .Opta-Bars-Full .Opta-Percent.Opta-Away {
+                background-color: $heatmap-teamsheet-button-background;
+            }
+        }
+    }
+
+// actionArea
+    .action_area_wrap {
+        .Opta {}
+    }
+
+// averagePosition
+    .average_positions_wrap {
+        .Opta {
+            .Opta-Teamsheet-Holder.Opta-Away .Opta-Teamsheet-Button,
+            .Opta-Teamsheet-Holder .Opta-Teamsheet-Button,
+            .Opta-Nav li.Opta-On a,
+            .Opta-Stats-Bars .Opta-Bars-Full .Opta-Percent.Opta-Away {
+                background-color: $average-position-teamsheet-button-background;
+            }
+        }
+    }
+
+// attackingThirds
+    .attacking_thirds_wrap {
+        .Opta {}
+    }
+
+// chalkboard
+    .chalkboard_wrap {
+        .Opta {
+            .Opta-Teamsheet-Holder.Opta-Away .Opta-Teamsheet-Button,
+            .Opta-Teamsheet-Holder .Opta-Teamsheet-Button,
+            .Opta-Nav li.Opta-On a,
+            .Opta-Stats-Bars .Opta-Bars-Full .Opta-Percent.Opta-Away {
+                background-color: $chalkboard-teamsheet-button-background;
+            }
+        }
+    }
+
+// goalReplay
+    .goal_replay_wrap {
+        .Opta {}
+    }
+
+// passCombination
+    .pass_combination_wrap {
+        .Opta {
+            .Opta-Nav {
+                li.Opta-On a{
+                    font-weight: $pass-comb-nav-on-a-fw;
+                    color: $pass-comb-nav-on-a-color;
+                    background-color: $pass-comb-nav-on-a-background;
+                }
+    
+                li.Opta-On a:hover{
+                    background: $pass-comb-nav-on-a-hover-background;
+                }
+            }
+
+            div.Opta-Dropdown {
+                label.Opta-Dropdown-Label {
+                    background: $pass-comb-dropdown-label-background;
+    
+                    select {
+                        font-size: $pass-comb-dropdown-label-select-fs;
+                    }
+    
+                    span.Opta-Dropdown-Label-Button {
+                        background: $pass-comb-dropdown-label-button-background;
+                        
+                        &:hover {
+                            background: $pass-comb-dropdown-label-button-hover-background;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+}
